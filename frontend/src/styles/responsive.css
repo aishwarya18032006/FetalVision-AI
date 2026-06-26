@@ -1,0 +1,21 @@
+/* Additional responsive adjustments if needed, 
+   though most are handled with min-width media queries in specific files. */
+   
+@media (max-width: 640px) {
+  .landing-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .auth-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .stat-icon {
+    display: none; /* Hide icons on very small screens to save space */
+  }
+}

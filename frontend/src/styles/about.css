@@ -1,0 +1,89 @@
+.about-main {
+  padding: 8rem 1rem 4rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+}
+
+@media (min-width: 640px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+.about-subtitle {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-slate-500);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-section {
+  padding: 2.5rem;
+  background-color: var(--color-white);
+  line-height: 1.7;
+  color: var(--color-slate-700);
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-slate-900);
+  margin-bottom: 1.25rem;
+}
+
+.about-list {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-list li {
+  padding-left: 0.5rem;
+}
+
+.about-list li::marker {
+  color: var(--color-primary-500);
+  font-weight: 600;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-badge {
+  background-color: var(--color-slate-100);
+  color: var(--color-slate-700);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--color-slate-200);
+}
+
+.contact-section {
+  background-image: linear-gradient(to right, var(--color-slate-900), var(--color-slate-800));
+  color: var(--color-white);
+}
+
+.contact-section .section-heading {
+  color: var(--color-white);
+}

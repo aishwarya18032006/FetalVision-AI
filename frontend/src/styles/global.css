@@ -1,0 +1,129 @@
+@import url('./variables.css');
+@import url('./reset.css');
+@import url('./layout.css');
+@import url('./components.css');
+@import url('./dashboard.css');
+@import url('./auth.css');
+@import url('./upload.css');
+@import url('./history.css');
+@import url('./about.css');
+@import url('./responsive.css');
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-900);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: var(--gradient-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Landing Page specific styles */
+.landing-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-slate-200);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.landing-nav-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.landing-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.landing-login-link {
+  color: var(--color-slate-600);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
+.landing-login-link:hover {
+  color: var(--color-primary-600);
+}
+
+.landing-main {
+  padding: 8rem 1rem 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.landing-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-slate-900);
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .landing-hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.landing-hero-subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--color-slate-500);
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.landing-preview-container {
+  margin-top: 5rem;
+}
+
+.landing-preview-mockup {
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--color-slate-800);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-slate-700);
+}
+
+.landing-preview-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 24rem;
+  background-image: linear-gradient(to bottom right, var(--color-slate-800), var(--color-slate-900));
+  color: var(--color-slate-400);
+  font-size: 1.25rem;
+}
