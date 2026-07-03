@@ -45,7 +45,7 @@ graph TD
     UI[React Frontend UI] <-->|HTTP REST / JWT| API[Express API Gateway]
     
     API <-->|File System / Child Process| PyBridge[Python Inference Wrapper]
-    PyBridge <-->|PyTorch + OpenCLIP| Model[FetalCLIP Model]
+    PyBridge <-->|PyTorch + OpenCLIP| Model[FetalVision Model]
     
     API <-->|Prisma ORM| DB[(PostgreSQL Database)]
     
